@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "CC",
+    "CS",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "captercraft:copper_axe"
+  }
+}

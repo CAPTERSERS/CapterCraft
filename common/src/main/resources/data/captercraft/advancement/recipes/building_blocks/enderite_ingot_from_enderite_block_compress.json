@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enderite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "captercraft:enderite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "captercraft:enderite_ingot_from_enderite_block_compress"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enderite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "captercraft:enderite_ingot_from_enderite_block_compress"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "captercraft:enderite_shard"
+    },
+    "O": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    "DED",
+    "EOE",
+    "DED"
+  ],
+  "result": {
+    "count": 1,
+    "id": "captercraft:enderite_ingot"
+  }
+}

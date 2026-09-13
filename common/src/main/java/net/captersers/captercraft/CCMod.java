@@ -1,42 +1,72 @@
 package net.captersers.captercraft;
 
-import net.captersers.captercraft.item.*;
-import net.captersers.captercraft.registry.*;
+import net.captersers.captercraft.item.material.CCArmorMaterials;
+import net.captersers.captercraft.registry.CCBlocks;
+import net.captersers.captercraft.registry.CCCreativeTabs;
+import net.captersers.captercraft.registry.CCItems;
+import net.captersers.captercraft.registry.CCVanillaCreativeTabs;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public final class CCMod {
-
-    /** The unique identifier for mod */
+/**
+ * Punto de entrada común de CapterCraft (Architectury).
+ * Orquesta el registro de materiales, bloques, ítems y la pestaña creativa.
+ *
+ * @see CCArmorMaterials
+ * @see CCBlocks
+ * @see CCItems
+ * @see CCCreativeTabs
+ * @see CCVanillaCreativeTabs
+ */
+public final class CCMod 
+{
+    /**
+     * Identificador del mod y espacio de nombres de recursos ({@code captercraft}).
+     */
     public static final String MOD_ID = "captercraft";
 
-    /** Logger instance for this mod to handle debug and info messages */
+    /**
+     * Registrador de mensajes de arranque y diagnóstico.
+     *
+     * @see LoggerFactory#getLogger(String)
+     */
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-    public static void init() {
-        LOGGER.info("Initializing Advanced Vanilla mod...");
+    /**
+     * Impide instanciar esta clase de utilidades.
+     */
+    private CCMod() {}
 
-        // Initialize all custom blocks and their properties
-        CCBlocks.init();
-        LOGGER.info("AVBlocks initialized successfully!");
-
-        // Initialize all custom items (tools, armor, materials)
-        CCItems.init();
-        LOGGER.info("AVItems initialized successfully!");
-
-        // Set up creative inventory item groups and categories
-        CCCreativeModeTabs.init();
-        LOGGER.info("AVCreativeModeTabs initialized successfully!");
-
-        // Configure custom armor material properties and durability
+    /**
+     * Inicializa los registros compartidos entre Fabric y NeoForge.
+     * Los materiales de armadura se registran antes que los ítems porque
+     * {@link CCItems} referencia {@link CCArmorMaterials} en sus proveedores.
+     *
+     * @see CCArmorMaterials#init()
+     * @see CCBlocks#init()
+     * @see CCItems#init()
+     * @see CCCreativeTabs#init()
+     * @see CCVanillaCreativeTabs#init()
+     */
+    public static void init() 
+    {
         CCArmorMaterials.init();
-        LOGGER.info("AVArmorMaterials initialized successfully!");
-
-        LOGGER.info("Advanced Vanilla mod initialization completed!");
+        CCBlocks.init();
+        CCItems.init();
+        CCCreativeTabs.init();
+        CCVanillaCreativeTabs.init();
     }
 
-    public static ResourceLocation id(String path) {
-        return ResourceLocation.fromNamespaceAndPath(CCMod.MOD_ID, path);
+    /**
+     * Construye un {@link ResourceLocation} bajo el espacio {@link #MOD_ID}.
+     *
+     * @param path ruta del recurso (bloque, ítem, tag, feature, etc.)
+     * @return identificador {@code captercraft:<path>}
+     * @see ResourceLocation#fromNamespaceAndPath(String, String)
+     */
+    public static ResourceLocation id(String path) 
+    {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "copper_nugget_from_copper_items",
+  "ingredient": {
+    "item": "captercraft:copper_sword"
+  },
+  "result": {
+    "id": "captercraft:copper_nugget"
+  }
+}

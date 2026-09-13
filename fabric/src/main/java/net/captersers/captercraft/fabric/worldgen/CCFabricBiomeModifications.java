@@ -1,42 +1,61 @@
 package net.captersers.captercraft.fabric.worldgen;
 
 import net.captersers.captercraft.CCMod;
-import net.captersers.captercraft.worldgen.CCPlacedFeatures;
+import net.captersers.captercraft.tag.CCBiomeTags;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 /**
- * Handles biome modifications for world generation features.
- * This class is responsible for adding custom world generation features to specific biomes.
+ * Inyecta las vetas grande y pequeña de void shard en Fabric.
+ * Fabric no lee biome modifiers de NeoForge; esta clase es el equivalente del JSON
+ * en el módulo NeoForge. Se excluye {@link Biomes#THE_END} (isla de la dragona).
+ * Los biomas válidos coinciden con {@link CCBiomeTags#HAS_VOID_SHARD}.
  *
- * @author Captersers Team
- * @since 1.0.0
+ * @see BiomeModifications#addFeature
+ * @see BiomeSelectors#foundInTheEnd()
  */
-public class CCFabricBiomeModifications {
+public final class CCFabricBiomeModifications 
+{
+    /**
+     * Veta grande (size 3, 1 intento), equivalente a {@code ore_ancient_debris_large}.
+     *
+     * @see Registries#PLACED_FEATURE
+     */
+    private static final ResourceKey<PlacedFeature> VOID_SHARD_PLACED =
+            ResourceKey.create(Registries.PLACED_FEATURE, CCMod.id("void_shard_placed"));
 
     /**
-     * Initializes and registers world generation features for specific biomes.
-     * This method configures where custom blocks and structures will be generated in the world.
+     * Vetas pequeñas (size 2, 2 intentos), equivalente a {@code ore_ancient_debris_small}.
      *
-     * @see BiomeModifications#addFeature
-     * @see BiomeSelectors#foundInTheEnd()
-     * @see GenerationStep.Decoration#UNDERGROUND_ORES
+     * @see Registries#PLACED_FEATURE
      */
-    public static void init() {
+    private static final ResourceKey<PlacedFeature> VOID_SHARD_PLACED_SMALL =
+            ResourceKey.create(Registries.PLACED_FEATURE, CCMod.id("void_shard_placed_small"));
 
-        // Log the start of worldgen feature registration
-        CCMod.LOGGER.info("Registering worldgen features for biomes...");
+    /**
+     * Impide instanciar esta clase de worldgen.
+     */
+    private CCFabricBiomeModifications() {}
 
-        // Add Void Shard generation to End biomes
+    /**
+     * Añade void shard a {@link GenerationStep.Decoration#UNDERGROUND_ORES} en islas exteriores del End.
+     *
+     * @see Biomes#THE_END
+     */
+    public static void init() 
+    {
         BiomeModifications.addFeature(
-                BiomeSelectors.foundInTheEnd(),
+                BiomeSelectors.foundInTheEnd().and(BiomeSelectors.excludeByKey(Biomes.THE_END)),
                 GenerationStep.Decoration.UNDERGROUND_ORES,
-                CCPlacedFeatures.VOID_SHARD_PLACED
-        );
-
-        // Log successful registration with generation details
-        CCMod.LOGGER.info("Worldgen features registered successfully!");
-        CCMod.LOGGER.info("Void Shard will generate in End biomes with 2 veins per chunk, size 3, height 0-128");
+                VOID_SHARD_PLACED);
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheEnd().and(BiomeSelectors.excludeByKey(Biomes.THE_END)),
+                GenerationStep.Decoration.UNDERGROUND_ORES,
+                VOID_SHARD_PLACED_SMALL);
     }
 }

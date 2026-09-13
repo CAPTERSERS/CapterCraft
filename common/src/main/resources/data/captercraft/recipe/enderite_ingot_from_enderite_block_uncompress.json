@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "captercraft:block_of_enderite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "captercraft:enderite_ingot"
+  }
+}
