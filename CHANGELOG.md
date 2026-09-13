@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Advanced Vanilla mod will be documented in this file.
+All notable changes to the CapterCraft mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -12,6 +12,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - More world generation features
 - Enhanced crafting mechanics
 - Additional effects
+
+## [1.0.1] - 2026-09-13
+
+### Changed
+- **Copper Tool Stats** aligned with vanilla copper from Minecraft 1.21.11
+  - 190 durability (was 180)
+  - 5.0x mining speed (unchanged)
+  - 1.0 attack damage bonus (was 1.5)
+  - 13 enchantability (was 8)
+  - Repairable with Copper Ingots
+- **Copper Attack Modifiers** match vanilla copper / stone tools
+  - Axe: 7.0 damage, -3.2 speed (was 6.5, -3.2)
+  - Hoe: -1.0 damage, -2.0 speed (was -1.5, -1.5)
+  - Sword, pickaxe, and shovel modifiers unchanged
+- **Copper Armor** durability multiplier 11 (was 10)
+  - Helmet 121, Chestplate 176, Leggings 165, Boots 143
+  - Body defense 4 (was 3)
+  - Piece defense 1 / 3 / 4 / 2, enchantability 8, toughness 0 (unchanged)
+- **Copper Harvest Level** matches stone: incorrect for iron-tier and diamond-tier blocks
+- README summary updated for this Minecraft version
+
+### Technical
+- Mod version 1.0.1
+- Supports Minecraft 1.21.1
+- Compatible with Fabric Loader 0.16.14+
+- Compatible with NeoForge 21.1.191+
+- Requires Architectury API 13.0.8+
 
 ## [1.0.0] - 2025-07-02
 
@@ -39,9 +66,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Void Shard - rare ore found in The End dimension
 
 - **World Generation**
-  - Void Shards generate in The End (End Stone)
-  - 3 blocks per vein, 2 veins per chunk
-  - Height range: 0-128 blocks
+  - Void Shards generate in The End (outer islands)
+  - Veins of size 3 plus smaller veins of size 2
+  - Height range: Y 32–80 (trapezoid)
 
 - **Crafting System**
   - Material conversion recipes (nugget ↔ ingot, ingot ↔ block)
@@ -76,6 +103,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Version History
+
+### Version 1.0.1
+- **Release Date**: September 13, 2026
+- **Minecraft Version**: 1.21.1
+- **Architectury API**: 13.0.8
+- **Fabric Loader**: 0.16.14+
+- **NeoForge**: 21.1.191+
 
 ### Version 1.0.0 (Initial Release)
 - **Release Date**: December 19, 2024
@@ -114,6 +148,6 @@ When adding new entries to this changelog, please follow these guidelines:
 
 ## Links
 
-- [GitHub Repository](https://github.com/CAPTERSERS/Advanced-Vanilla)
-- [Issue Tracker](https://github.com/CAPTERSERS/Advanced-Vanilla/issues)
-- [Download Page](https://github.com/your-username/Advanced-Vanilla/releases) 
+- [GitHub Repository](https://github.com/CAPTERSERS/CapterCraft)
+- [Issue Tracker](https://github.com/CAPTERSERS/CapterCraft/issues)
+- [Download Page](https://github.com/CAPTERSERS/CapterCraft/releases)

@@ -6,40 +6,39 @@
 [![NeoForge](https://img.shields.io/badge/NeoForge-Loader-orange.svg)](https://neoforged.net/)
 [![GitBook](https://img.shields.io/static/v1?message=Documentation\&logo=gitbook\&logoColor=ffffff\&label=%20\&labelColor=B22222\&color=000)](https://captersers-org.gitbook.io/captersers-org/)
 
-**¡Add new tools, armor, items, and blocks, plus brand-new recipes built from vanilla materials — Unleash the mystical power of _Enderite_!**
+**Add new tools, armor, items, and blocks, plus recipes built from vanilla materials — unleash the mystical power of _Enderite_.**
 
-Compatible with **Fabric** and **NeoForge**.
+Compatible with **Fabric** and **NeoForge**. This branch is for **Minecraft 1.21.1**.
 
-## 📦 Features
+## Features
 
-- Enderite tools (stronger than netherite).
-- Enderite armor (lighter and tougher).
-- Copper tools and armor.
-- New mysterious blocks and recipes.
+- **Copper** tools, armor, and nugget. Stats match vanilla copper from Minecraft 1.21.11 (between stone and iron).
+- **Enderite** tools and armor, stronger than netherite and fire-resistant. Upgrade netherite gear with an Enderite Upgrade smithing template and an enderite ingot.
+- **Void Shard** ore in The End. Smelt or blast it into enderite shards, then craft enderite ingots.
+- **Medium Weighted Pressure Plate** (copper, 75 entities).
+- Extra vanilla-friendly recipes, including smelting raw iron, gold, and copper blocks into full blocks.
 
-## ⚔️ Items & Blocks
+## Content
 
 ### Items
-- Copper Nugget 
-- Copper Tools and Armor
-- Enderite Ingot
-- Enderite Shard
-- Enderite Tools and Armor
+
+- Copper nugget, copper tools, and copper armor
+- Enderite shard, enderite ingot, and Enderite Upgrade smithing template
+- Enderite tools and armor
 
 ### Blocks
-- Block of Enderite
-- Medium Weighted Pressure Plate (75 entities)
+
 - Void Shard
+- Block of Enderite
+- Medium Weighted Pressure Plate
 
-And More...
-
-## 👥 Credits
+## Credits
 
 - **Creators**: CAPTERSERS Group (HANAKZ, Awdrewar, Caidrox)
 - **Inspiration**: A Steve who got tired of losing netherite in the End.
 - **Special thanks**: To you, brave adventurer, for downloading this mod.
 
-## 🧾 License
+## License
 
 This mod is open source under the MIT License.
 You’re free to share, modify, and use it in your adventures—always with love for the Minecraft community!

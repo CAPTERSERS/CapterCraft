@@ -34,7 +34,8 @@ public final class CCArmorMaterials
     private static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = DeferredRegister.create(CCMod.MOD_ID, Registries.ARMOR_MATERIAL);
 
     /**
-     * Cobre: defensa 1/3/4/2, encantabilidad 8, reparación con lingote de cobre.
+     * Cobre : defensa 1/3/4/2/4, encantabilidad 8, dureza 0 y empuje 0.
+     * El sonido {@code ARMOR_EQUIP_COPPER} no existe en 1.21.1; se usa el de hierro.
      *
      * @see Items#COPPER_INGOT
      * @see SoundEvents#ARMOR_EQUIP_IRON
@@ -45,7 +46,7 @@ public final class CCArmorMaterials
         enumMap.put(ArmorItem.Type.LEGGINGS, 3);
         enumMap.put(ArmorItem.Type.CHESTPLATE, 4);
         enumMap.put(ArmorItem.Type.HELMET, 2);
-        enumMap.put(ArmorItem.Type.BODY, 3);
+        enumMap.put(ArmorItem.Type.BODY, 4);
     }), 8, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Items.COPPER_INGOT));
 
     /**

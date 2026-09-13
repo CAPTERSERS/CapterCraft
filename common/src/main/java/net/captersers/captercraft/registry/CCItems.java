@@ -86,40 +86,40 @@ public final class CCItems
             CCSmithingTemplates::createEnderiteUpgradeTemplate);
 
     /**
-     * Botas de cobre (durabilidad de nivel 10).
+     * Botas de cobre (durabilidad de nivel 11: 143).
      *
      * @see CCArmorMaterials#COPPER
      */
     public static final RegistrySupplier<Item> COPPER_BOOTS = register("copper_boots",
             () -> new ArmorItem(CCArmorMaterials.COPPER, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(10))));
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(11))));
 
     /**
-     * Peto de cobre (durabilidad de nivel 10).
+     * Peto de cobre (durabilidad de nivel 11: 176).
      *
      * @see CCArmorMaterials#COPPER
      */
     public static final RegistrySupplier<Item> COPPER_CHESTPLATE = register("copper_chestplate",
             () -> new ArmorItem(CCArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(10))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(11))));
 
     /**
-     * Casco de cobre (durabilidad de nivel 10).
+     * Casco de cobre (durabilidad de nivel 11: 121).
      *
      * @see CCArmorMaterials#COPPER
      */
     public static final RegistrySupplier<Item> COPPER_HELMET = register("copper_helmet",
             () -> new ArmorItem(CCArmorMaterials.COPPER, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(10))));
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(11))));
 
     /**
-     * Grebas de cobre (durabilidad de nivel 10).
+     * Grebas de cobre (durabilidad de nivel 11: 165).
      *
      * @see CCArmorMaterials#COPPER
      */
     public static final RegistrySupplier<Item> COPPER_LEGGINGS = register("copper_leggings",
             () -> new ArmorItem(CCArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(10))));
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(11))));
 
     /**
      * Botas de enderita (nivel 42, resistentes al fuego).
@@ -158,20 +158,20 @@ public final class CCItems
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(42))));
 
     /**
-     * Hacha de cobre (daño 6.5, velocidad -3.2).
+     * Hacha de cobre (daño 7.0, velocidad -3.2).
      *
      * @see CCToolTiers#COPPER
      */
     public static final RegistrySupplier<Item> COPPER_AXE = register("copper_axe",
-            () -> new AxeItem(CCToolTiers.COPPER, new Item.Properties().attributes(AxeItem.createAttributes(CCToolTiers.COPPER, 6.5F, -3.2F))));
+            () -> new AxeItem(CCToolTiers.COPPER, new Item.Properties().attributes(AxeItem.createAttributes(CCToolTiers.COPPER, 7.0F, -3.2F))));
 
     /**
-     * Azada de cobre (daño -1.5, velocidad -1.5).
+     * Azada de cobre (daño -1.0, velocidad -2.0).
      *
      * @see CCToolTiers#COPPER
      */
     public static final RegistrySupplier<Item> COPPER_HOE = register("copper_hoe",
-            () -> new HoeItem(CCToolTiers.COPPER, new Item.Properties().attributes(HoeItem.createAttributes(CCToolTiers.COPPER, -1.5F, -1.5F))));
+            () -> new HoeItem(CCToolTiers.COPPER, new Item.Properties().attributes(HoeItem.createAttributes(CCToolTiers.COPPER, -1.0F, -2.0F))));
 
     /**
      * Pico de cobre (daño 1.0, velocidad -2.8).

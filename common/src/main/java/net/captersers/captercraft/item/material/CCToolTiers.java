@@ -18,12 +18,12 @@ import org.jetbrains.annotations.NotNull;
 public enum CCToolTiers implements Tier 
 {
     /**
-     * Cobre: 180 usos, velocidad 5.0, daño +1.5, encantabilidad 8.
+     * Cobre : 190 usos, velocidad 5.0, daño +1.0, encantabilidad 13.
      *
      * @see Items#COPPER_INGOT
      * @see CCBlockTags#INCORRECT_FOR_COPPER_TOOL
      */
-    COPPER(CCBlockTags.INCORRECT_FOR_COPPER_TOOL, 180, 5.0F, 1.5F, 8, Ingredient.of(Items.COPPER_INGOT)),
+    COPPER(CCBlockTags.INCORRECT_FOR_COPPER_TOOL, 190, 5.0F, 1.0F, 13, Ingredient.of(Items.COPPER_INGOT)),
 
     /**
      * Enderita: 3120 usos, velocidad 10.0, daño +5.0, encantabilidad 18.
