@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Advanced Vanilla mod will be documented in this file.
+All notable changes to the CapterCraft mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -13,23 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced crafting mechanics
 - Additional effects
 
-## [1.0.0] - 2025-07-02
+## [1.0.0] - 2026-09-13
 
 ### Added
-- **Copper Tier Equipment**
-  - Complete tool set: Sword, Pickaxe, Axe, Shovel, Hoe
-  - Complete armor set: Helmet, Chestplate, Leggings, Boots
-  - 180 durability, 5.0x mining speed, 1.5 attack damage bonus
-  - 8 enchantability, repairable with Copper Ingots
-
 - **Enderite Tier Equipment**
   - Complete tool set: Sword, Pickaxe, Axe, Shovel, Hoe
   - Complete armor set: Helmet, Chestplate, Leggings, Boots
   - 3120 durability, 10.0x mining speed, 5.0 attack damage bonus
   - 18 enchantability, fire resistant, repairable with Enderite Ingots
+  - Upgrade netherite gear with the Enderite Upgrade Smithing Template
 
 - **New Materials**
-  - Copper Nugget - 9 nuggets = 1 ingot conversion
   - Enderite Ingot - 9 ingots = 1 block conversion
   - Enderite Shard - obtained from smelting Void Shards
 
@@ -39,14 +33,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Void Shard - rare ore found in The End dimension
 
 - **World Generation**
-  - Void Shards generate in The End (End Stone)
-  - 3 blocks per vein, 2 veins per chunk
-  - Height range: 0-128 blocks
+  - Void Shards generate in The End (outer islands)
+  - Veins of size 3 plus smaller veins of size 2
+  - Height range: Y 32–80 (trapezoid)
 
 - **Crafting System**
-  - Material conversion recipes (nugget ↔ ingot, ingot ↔ block)
-  - Smelting recipes for raw blocks and Void Shards
-  - Recycling recipes for copper equipment
+  - Material conversion recipes (ingot ↔ block)
+  - Smelting recipes for raw iron, gold, and copper blocks, and for Void Shards
   - Enderite Upgrade Smithing Template
 
 - **Localization**
@@ -55,16 +48,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Technical
 - Built with Architectury API for cross-platform compatibility
-- Supports Minecraft 1.21.1
-- Compatible with Fabric Loader 0.16.14+
-- Compatible with NeoForge 21.1.186+
-- Requires Architectury API 13.0.8+
+- Supports Minecraft 1.21.11
+- Compatible with Fabric Loader 0.19.5+
+- Compatible with NeoForge 21.11.45+
+- Requires Architectury API 19.0.1+
+- Copper tools, armor, and nuggets are vanilla in this version and are not added by this mod
 
 ### Balance
-- Copper tier positioned between Stone and Iron
 - Enderite tier positioned above Netherite
 - Balanced durability and damage values
-- Appropriate enchantability for each tier
+- Appropriate enchantability for the tier
 - Fire resistance for Enderite equipment
 
 ### Compatibility
@@ -78,20 +71,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Version History
 
 ### Version 1.0.0 (Initial Release)
-- **Release Date**: December 19, 2024
-- **Minecraft Version**: 1.21.1
-- **Architectury API**: 13.0.8
-- **Fabric Loader**: 0.16.14+
-- **NeoForge**: 21.1.186+
+- **Release Date**: September 13, 2026
+- **Minecraft Version**: 1.21.11
+- **Architectury API**: 19.0.1
+- **Fabric Loader**: 0.19.5+
+- **NeoForge**: 21.11.45+
 
 ### Key Features Introduced
-1. **Copper Tier**: Early-game equipment tier
-2. **Enderite Tier**: End-game equipment tier
-3. **Void Shard Generation**: New ore in The End
-4. **Medium Weighted Pressure Plate**: Redstone component
-5. **Material Conversion System**: Flexible crafting options
-6. **Recycling System**: Resource recovery from equipment
-7. **Smithing Template**: Enderite upgrade system
+1. **Enderite Tier**: End-game equipment tier
+2. **Void Shard Generation**: New ore in The End
+3. **Medium Weighted Pressure Plate**: Redstone component
+4. **Material Conversion System**: Flexible crafting options
+5. **Smithing Template**: Enderite upgrade system
 
 ### Technical Achievements
 - Cross-platform compatibility (Fabric + NeoForge)
@@ -114,6 +105,6 @@ When adding new entries to this changelog, please follow these guidelines:
 
 ## Links
 
-- [GitHub Repository](https://github.com/CAPTERSERS/Advanced-Vanilla)
-- [Issue Tracker](https://github.com/CAPTERSERS/Advanced-Vanilla/issues)
-- [Download Page](https://github.com/your-username/Advanced-Vanilla/releases) 
+- [GitHub Repository](https://github.com/CAPTERSERS/CapterCraft)
+- [Issue Tracker](https://github.com/CAPTERSERS/CapterCraft/issues)
+- [Download Page](https://github.com/CAPTERSERS/CapterCraft/releases)
