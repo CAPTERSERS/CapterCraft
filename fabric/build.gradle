@@ -1,6 +1,6 @@
 plugins {
     id 'com.github.johnrengelman.shadow'
-    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id 'fabric-loom' version '1.13-SNAPSHOT'
 }
 
 architectury {

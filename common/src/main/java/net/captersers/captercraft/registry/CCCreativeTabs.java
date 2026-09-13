@@ -3,7 +3,7 @@ package net.captersers.captercraft.registry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.DeferredSupplier;
 import net.captersers.captercraft.CCMod;
-import net.minecraft.Util;
+import net.minecraft.util.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,13 +11,13 @@ import net.minecraft.world.item.ItemStack;
 
 /**
  * Pestaña creativa de CapterCraft.
- * El orden de ítems replica el registro original (bloques, herramientas, combate, ingredientes).
+ * El orden de ítems replica el registro (bloques, herramientas, combate, ingredientes).
  *
  * @see CreativeModeTab
  * @see CCBlocks
  * @see CCItems
  */
-public final class CCCreativeTabs 
+public final class CCCreativeTabs
 {
     /**
      * Registro diferido de pestañas creativas.
@@ -45,25 +45,15 @@ public final class CCCreativeTabs
                 output.accept(CCBlocks.BLOCK_OF_ENDERITE.get());
                 output.accept(CCBlocks.VOID_SHARD.get());
                 output.accept(CCBlocks.MEDIUM_WEIGHTED_PRESSURE_PLATE.get());
-                output.accept(CCItems.COPPER_SHOVEL.get());
-                output.accept(CCItems.COPPER_PICKAXE.get());
-                output.accept(CCItems.COPPER_AXE.get());
-                output.accept(CCItems.COPPER_HOE.get());
                 output.accept(CCItems.ENDERITE_SHOVEL.get());
                 output.accept(CCItems.ENDERITE_PICKAXE.get());
                 output.accept(CCItems.ENDERITE_AXE.get());
                 output.accept(CCItems.ENDERITE_HOE.get());
-                output.accept(CCItems.COPPER_SWORD.get());
                 output.accept(CCItems.ENDERITE_SWORD.get());
-                output.accept(CCItems.COPPER_HELMET.get());
-                output.accept(CCItems.COPPER_CHESTPLATE.get());
-                output.accept(CCItems.COPPER_LEGGINGS.get());
-                output.accept(CCItems.COPPER_BOOTS.get());
                 output.accept(CCItems.ENDERITE_HELMET.get());
                 output.accept(CCItems.ENDERITE_CHESTPLATE.get());
                 output.accept(CCItems.ENDERITE_LEGGINGS.get());
                 output.accept(CCItems.ENDERITE_BOOTS.get());
-                output.accept(CCItems.COPPER_NUGGET.get());
                 output.accept(CCItems.ENDERITE_SHARD.get());
                 output.accept(CCItems.ENDERITE_INGOT.get());
                 output.accept(CCItems.ENDERITE_UPGRADE_SMITHING_TEMPLATE.get());
@@ -80,7 +70,7 @@ public final class CCCreativeTabs
      *
      * @see DeferredRegister#register()
      */
-    public static void init() 
+    public static void init()
     {
         TABS.register();
     }

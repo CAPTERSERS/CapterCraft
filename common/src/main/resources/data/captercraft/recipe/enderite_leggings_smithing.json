@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "captercraft:enderite_ingot"
-  },
-  "base": {
-    "item": "minecraft:netherite_leggings"
-  },
+  "addition": "captercraft:enderite_ingot",
+  "base": "minecraft:netherite_leggings",
   "result": {
     "count": 1,
     "id": "captercraft:enderite_leggings"
   },
-  "template": {
-    "item": "captercraft:enderite_upgrade_smithing_template"
-  }
+  "template": "captercraft:enderite_upgrade_smithing_template"
 }

@@ -4,6 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.captersers.captercraft.CCMod;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.WeightedPressurePlateBlock;
@@ -12,7 +13,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
-import java.util.function.Supplier;
+import java.util.function.Function;
 
 /**
  * Registro de bloques de CapterCraft.
@@ -21,7 +22,7 @@ import java.util.function.Supplier;
  * @see Registries#BLOCK
  * @see CCItems
  */
-public final class CCBlocks 
+public final class CCBlocks
 {
     /**
      * Registro diferido de bloques bajo el espacio {@link CCMod#MOD_ID}.
@@ -36,7 +37,7 @@ public final class CCBlocks
      * @see SoundType#NETHERITE_BLOCK
      */
     public static final RegistrySupplier<Block> BLOCK_OF_ENDERITE = register("block_of_enderite",
-            () -> new Block(BlockBehaviour.Properties.of()
+            properties -> new Block(properties
                     .mapColor(MapColor.COLOR_PURPLE)
                     .requiresCorrectToolForDrops()
                     .strength(50.0F, 1200.0F)
@@ -49,11 +50,11 @@ public final class CCBlocks
      * @see BlockSetType#COPPER
      */
     public static final RegistrySupplier<Block> MEDIUM_WEIGHTED_PRESSURE_PLATE = register("medium_weighted_pressure_plate",
-            () -> new WeightedPressurePlateBlock(75, BlockSetType.COPPER, BlockBehaviour.Properties.of()
+            properties -> new WeightedPressurePlateBlock(75, BlockSetType.COPPER, properties
                     .mapColor(MapColor.COLOR_ORANGE)
                     .forceSolidOn()
                     .requiresCorrectToolForDrops()
-                    .noCollission()
+                    .noCollision()
                     .strength(0.5F)
                     .pushReaction(PushReaction.DESTROY)));
 
@@ -63,7 +64,7 @@ public final class CCBlocks
      * @see SoundType#NETHER_ORE
      */
     public static final RegistrySupplier<Block> VOID_SHARD = register("void_shard",
-            () -> new Block(BlockBehaviour.Properties.of()
+            properties -> new Block(properties
                     .mapColor(MapColor.COLOR_PURPLE)
                     .requiresCorrectToolForDrops()
                     .strength(30.0F, 1200.0F)
@@ -79,21 +80,22 @@ public final class CCBlocks
      *
      * @see DeferredRegister#register()
      */
-    public static void init() 
+    public static void init()
     {
         BLOCKS.register();
     }
 
     /**
-     * Registra un bloque con identificador {@code captercraft:<name>}.
+     * Registra un bloque con identificador {@code captercraft:<name>} y {@link BlockBehaviour.Properties#setId}.
      *
-     * @param name     ruta del bloque
-     * @param supplier fábrica diferida del bloque
+     * @param name    ruta del bloque
+     * @param factory fábrica que recibe propiedades ya identificadas
      * @return proveedor del bloque registrado
      * @see CCMod#id(String)
      */
-    private static RegistrySupplier<Block> register(String name, Supplier<Block> supplier) 
+    private static RegistrySupplier<Block> register(String name, Function<BlockBehaviour.Properties, Block> factory)
     {
-        return BLOCKS.register(CCMod.id(name), supplier);
+        ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, CCMod.id(name));
+        return BLOCKS.register(CCMod.id(name), () -> factory.apply(BlockBehaviour.Properties.of().setId(key)));
     }
 }

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 3.0,
   "group": "enderite_shard_from_void_shard",
-  "ingredient": {
-    "item": "captercraft:void_shard"
-  },
+  "ingredient": "captercraft:void_shard",
   "result": {
     "id": "captercraft:enderite_shard"
   }

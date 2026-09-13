@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "captercraft:enderite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "captercraft:enderite"
+      }
+    ]
+  }
+}

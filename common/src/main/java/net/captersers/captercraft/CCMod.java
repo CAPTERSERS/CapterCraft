@@ -1,25 +1,23 @@
 package net.captersers.captercraft;
 
-import net.captersers.captercraft.item.material.CCArmorMaterials;
 import net.captersers.captercraft.registry.CCBlocks;
 import net.captersers.captercraft.registry.CCCreativeTabs;
 import net.captersers.captercraft.registry.CCItems;
 import net.captersers.captercraft.registry.CCVanillaCreativeTabs;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * Punto de entrada común de CapterCraft (Architectury).
- * Orquesta el registro de materiales, bloques, ítems y la pestaña creativa.
+ * Orquesta el registro de bloques, ítems y la pestaña creativa.
  *
- * @see CCArmorMaterials
  * @see CCBlocks
  * @see CCItems
  * @see CCCreativeTabs
  * @see CCVanillaCreativeTabs
  */
-public final class CCMod 
+public final class CCMod
 {
     /**
      * Identificador del mod y espacio de nombres de recursos ({@code captercraft}).
@@ -40,18 +38,14 @@ public final class CCMod
 
     /**
      * Inicializa los registros compartidos entre Fabric y NeoForge.
-     * Los materiales de armadura se registran antes que los ítems porque
-     * {@link CCItems} referencia {@link CCArmorMaterials} en sus proveedores.
      *
-     * @see CCArmorMaterials#init()
      * @see CCBlocks#init()
      * @see CCItems#init()
      * @see CCCreativeTabs#init()
      * @see CCVanillaCreativeTabs#init()
      */
-    public static void init() 
+    public static void init()
     {
-        CCArmorMaterials.init();
         CCBlocks.init();
         CCItems.init();
         CCCreativeTabs.init();
@@ -59,14 +53,14 @@ public final class CCMod
     }
 
     /**
-     * Construye un {@link ResourceLocation} bajo el espacio {@link #MOD_ID}.
+     * Construye un {@link Identifier} bajo el espacio {@link #MOD_ID}.
      *
      * @param path ruta del recurso (bloque, ítem, tag, feature, etc.)
      * @return identificador {@code captercraft:<path>}
-     * @see ResourceLocation#fromNamespaceAndPath(String, String)
+     * @see Identifier#fromNamespaceAndPath(String, String)
      */
-    public static ResourceLocation id(String path) 
+    public static Identifier id(String path)
     {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 }

@@ -2,9 +2,10 @@ package net.captersers.captercraft.item;
 
 import net.captersers.captercraft.CCMod;
 import net.minecraft.ChatFormatting;
-import net.minecraft.Util;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
+import net.minecraft.util.Util;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SmithingTemplateItem;
 
 import java.util.List;
@@ -16,15 +17,8 @@ import java.util.List;
  * @see SmithingTemplateItem
  * @see net.captersers.captercraft.registry.CCItems#ENDERITE_UPGRADE_SMITHING_TEMPLATE
  */
-public final class CCSmithingTemplates 
+public final class CCSmithingTemplates
 {
-    /**
-     * Color del título de la mejora en la interfaz de herrería.
-     *
-     * @see ChatFormatting#GRAY
-     */
-    private static final ChatFormatting TITLE = ChatFormatting.GRAY;
-
     /**
      * Color de las descripciones de aplica-a e ingredientes.
      *
@@ -35,52 +29,52 @@ public final class CCSmithingTemplates
     /**
      * Icono de ranura vacía de casco en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_HELMET = ResourceLocation.withDefaultNamespace("item/empty_armor_slot_helmet");
+    private static final Identifier EMPTY_SLOT_HELMET = Identifier.withDefaultNamespace("container/slot/helmet");
 
     /**
      * Icono de ranura vacía de peto en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_CHESTPLATE = ResourceLocation.withDefaultNamespace("item/empty_armor_slot_chestplate");
+    private static final Identifier EMPTY_SLOT_CHESTPLATE = Identifier.withDefaultNamespace("container/slot/chestplate");
 
     /**
      * Icono de ranura vacía de grebas en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_LEGGINGS = ResourceLocation.withDefaultNamespace("item/empty_armor_slot_leggings");
+    private static final Identifier EMPTY_SLOT_LEGGINGS = Identifier.withDefaultNamespace("container/slot/leggings");
 
     /**
      * Icono de ranura vacía de botas en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_BOOTS = ResourceLocation.withDefaultNamespace("item/empty_armor_slot_boots");
+    private static final Identifier EMPTY_SLOT_BOOTS = Identifier.withDefaultNamespace("container/slot/boots");
 
     /**
      * Icono de ranura vacía de azada en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_HOE = ResourceLocation.withDefaultNamespace("item/empty_slot_hoe");
+    private static final Identifier EMPTY_SLOT_HOE = Identifier.withDefaultNamespace("container/slot/hoe");
 
     /**
      * Icono de ranura vacía de hacha en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_AXE = ResourceLocation.withDefaultNamespace("item/empty_slot_axe");
+    private static final Identifier EMPTY_SLOT_AXE = Identifier.withDefaultNamespace("container/slot/axe");
 
     /**
      * Icono de ranura vacía de espada en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_SWORD = ResourceLocation.withDefaultNamespace("item/empty_slot_sword");
+    private static final Identifier EMPTY_SLOT_SWORD = Identifier.withDefaultNamespace("container/slot/sword");
 
     /**
      * Icono de ranura vacía de pala en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_SHOVEL = ResourceLocation.withDefaultNamespace("item/empty_slot_shovel");
+    private static final Identifier EMPTY_SLOT_SHOVEL = Identifier.withDefaultNamespace("container/slot/shovel");
 
     /**
      * Icono de ranura vacía de pico en la plantilla de herrería.
      */
-    private static final ResourceLocation EMPTY_SLOT_PICKAXE = ResourceLocation.withDefaultNamespace("item/empty_slot_pickaxe");
+    private static final Identifier EMPTY_SLOT_PICKAXE = Identifier.withDefaultNamespace("container/slot/pickaxe");
 
     /**
      * Icono de ranura vacía de lingote (material adicional).
      */
-    private static final ResourceLocation EMPTY_SLOT_INGOT = ResourceLocation.withDefaultNamespace("item/empty_slot_ingot");
+    private static final Identifier EMPTY_SLOT_INGOT = Identifier.withDefaultNamespace("container/slot/ingot");
 
     /**
      * Texto «se aplica a» del molde de mejora de enderita.
@@ -109,12 +103,6 @@ public final class CCSmithingTemplates
             Util.makeDescriptionId("item", CCMod.id("smithing_template.enderite_upgrade.additions_slot_description")));
 
     /**
-     * Título de la mejora de enderita en la mesa de herrería.
-     */
-    private static final Component ENDERITE_UPGRADE = Component.translatable(
-            Util.makeDescriptionId("upgrade", CCMod.id("enderite_upgrade"))).withStyle(TITLE);
-
-    /**
      * Impide instanciar esta clase de fábrica.
      */
     private CCSmithingTemplates() {}
@@ -122,20 +110,21 @@ public final class CCSmithingTemplates
     /**
      * Crea el {@link SmithingTemplateItem} de mejora de netherita a enderita.
      *
+     * @param properties propiedades del ítem (ya identificadas por el registro)
      * @return plantilla configurada con textos e iconos de ranura
      * @see #createEnderiteUpgradeEmptySlotList()
      * @see #createEnderiteUpgradeEmptyMaterialList()
      */
-    public static SmithingTemplateItem createEnderiteUpgradeTemplate() 
+    public static SmithingTemplateItem createEnderiteUpgradeTemplate(Item.Properties properties)
     {
         return new SmithingTemplateItem(
                 ENDERITE_UPGRADE_APPLIES_TO,
                 ENDERITE_UPGRADE_INGREDIENTS,
-                ENDERITE_UPGRADE,
                 ENDERITE_UPGRADE_BASE_SLOT_DESCRIPTION,
                 ENDERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION,
                 createEnderiteUpgradeEmptySlotList(),
-                createEnderiteUpgradeEmptyMaterialList());
+                createEnderiteUpgradeEmptyMaterialList(),
+                properties);
     }
 
     /**
@@ -143,7 +132,7 @@ public final class CCSmithingTemplates
      *
      * @return ubicaciones de textura de ranura vacía
      */
-    private static List<ResourceLocation> createEnderiteUpgradeEmptySlotList() 
+    private static List<Identifier> createEnderiteUpgradeEmptySlotList()
     {
         return List.of(
                 EMPTY_SLOT_HELMET,
@@ -162,7 +151,7 @@ public final class CCSmithingTemplates
      *
      * @return ubicaciones de textura de material vacío
      */
-    private static List<ResourceLocation> createEnderiteUpgradeEmptyMaterialList() 
+    private static List<Identifier> createEnderiteUpgradeEmptyMaterialList()
     {
         return List.of(EMPTY_SLOT_INGOT);
     }
