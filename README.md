@@ -1,10 +1,10 @@
 # CapterCraft
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-green.svg)](https://www.minecraft.net/)
-[![Architectury](https://img.shields.io/badge/Architectury-API-blue.svg)](https://github.com/Architectury/ArchitecturyAPI)
-[![Fabric](https://img.shields.io/badge/Fabric-Loader-purple.svg)](https://fabricmc.net/)
-[![NeoForge](https://img.shields.io/badge/NeoForge-Loader-orange.svg)](https://neoforged.net/)
-[![GitBook](https://img.shields.io/static/v1?message=Documentation\&logo=gitbook\&logoColor=ffffff\&label=%20\&labelColor=B22222\&color=000)](https://captersers-org.gitbook.io/captersers-org/)
+<a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Minecraft-1.21.11-green.svg" alt="Minecraft"></a>
+<a href="https://github.com/Architectury/ArchitecturyAPI" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Architectury-API-blue.svg" alt="Architectury"></a>
+<a href="https://fabricmc.net/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Fabric-Loader-purple.svg" alt="Fabric"></a>
+<a href="https://neoforged.net/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/NeoForge-Loader-orange.svg" alt="NeoForge"></a>
+<a href="https://captersers-org.gitbook.io/captersers-org/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/static/v1?message=Documentation&logo=gitbook&logoColor=ffffff&label=%20&labelColor=B22222&color=000" alt="GitBook"></a>
 
 **Add new tools, armor, items, and blocks, plus recipes built from vanilla materials — unleash the mystical power of _Enderite_.**
 
