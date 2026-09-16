@@ -1,0 +1,25 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: CapterCraft
+  structure:
+    - type: section
+      key: section-captercraft
+      title: CapterCraft
+      path: captercraft
+      default: true
+      children:
+        - type: space
+          key: space-en
+          title: English
+          path: en
+          default: true
+          content:
+            directory: ./en
+            language: en
+        - type: space
+          key: space-es
+          title: Spanish
+          path: es
+          content:
+            directory: ./es
+            language: es
