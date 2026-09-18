@@ -1,3 +1,6 @@
 # Table of contents
 
-* [CapterCraft](README.md)
+* [Inicio](README.md)
+* [Ítems y bloques](items-y-bloques.md)
+* [Cambios](cambios.md)
+* [Versiones](versiones.md)
