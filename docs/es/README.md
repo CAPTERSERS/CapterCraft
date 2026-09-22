@@ -39,7 +39,7 @@ El mismo contenido. Requiere NeoForge y Architectury API.
   </thead>
   <tbody>
     <tr>
-      <td><strong>Ítems y bloques</strong></td>
+      <td><strong>Ítems y Bloques</strong></td>
       <td>Todo lo que añade el mod, por versión de Minecraft.</td>
       <td><a href="items-y-bloques.md">items-y-bloques.md</a></td>
     </tr>

@@ -1,8 +1,6 @@
 ---
 description: Everything CapterCraft adds. Copper tools, armor, and nuggets are only on 1.21.1.
 icon: cubes
-layout:
-  width: wide
 ---
 
 # Items and Blocks
@@ -30,12 +28,7 @@ Copper tools, armor, and nuggets are **only on 1.21.1**. On 1.21.11 they are van
 {% tab title="Overview" %}
 Rare End ore. Generates in end stone on the outer islands (`end_highlands`, `end_midlands`, `end_barrens`, `small_end_islands`), Y 32–80. Veins of size 3 plus smaller veins of size 2.
 
-Hardness 30 / 1200. Needs the correct tool to drop. Fire resistant as an item.
-{% endtab %}
-
-{% tab title="Drops" %}
-- **Silk Touch** → Void Shard block
-- **Otherwise** → Enderite Shard
+Hardness 30 / 1200. Needs a **diamond** pickaxe or better to drop. Mining always drops the Void Shard block (1.21.1 and 1.21.11). Immune to normal explosions, like ancient debris. Fire resistant as an item.
 {% endtab %}
 
 {% tab title="Uses" %}
@@ -58,31 +51,13 @@ Smelt or blast into an Enderite Shard.
 
 {% tabs %}
 {% tab title="Overview" %}
-Storage and decoration. Purple netherite-like block. Hardness 50 / 1200. Fire resistant. Needs the correct tool to drop.
+Storage and decoration. Purple netherite-like block. Hardness 50 / 1200. Fire resistant. Needs a **diamond** pickaxe or better to drop.
 {% endtab %}
 
 {% tab title="Recipe" %}
-{% columns %}
-{% column %}
-<figure><img src="images/recipes/block-of-enderite.png" alt="Crafting: nine Enderite Ingots to Block of Enderite"><figcaption><p>9 ingots → 1 block</p></figcaption></figure>
-
-Nine Enderite Ingots → 1 Block of Enderite.
-
-```
-I I I
-I I I
-I I I
-```
-
-`I` = Enderite Ingot
-{% endcolumn %}
-
-{% column %}
-<figure><img src="images/recipes/block-of-enderite-to-ingots.png" alt="Crafting: Block of Enderite to nine Enderite Ingots"><figcaption><p>1 block → 9 ingots</p></figcaption></figure>
-
-Craft the block back into **9 ingots**.
-{% endcolumn %}
-{% endcolumns %}
+| 9 ingots → 1 block | 1 block → 9 ingots |
+| :---: | :---: |
+| ![Crafting: nine Enderite Ingots to Block of Enderite](images/recipes/block-of-enderite.png) | ![Crafting: Block of Enderite to nine Enderite Ingots](images/recipes/block-of-enderite-to-ingots.png) |
 {% endtab %}
 
 {% tab title="Uses" %}
@@ -110,12 +85,6 @@ Copper weighted plate. Activates with **75 entities**. Sits between the light (g
 
 {% tab title="Recipe" %}
 <figure><img src="images/recipes/medium-weighted-pressure-plate.png" alt="Crafting: two Copper Ingots to Medium Weighted Pressure Plate"><figcaption><p>Crafting grid</p></figcaption></figure>
-
-```
-C C
-```
-
-`C` = Copper Ingot
 {% endtab %}
 
 {% tab title="Uses" %}
@@ -123,7 +92,7 @@ Redstone input. Signal strength scales with entities on the plate, up to 75.
 {% endtab %}
 {% endtabs %}
 
-## Materials
+## Items
 
 ### Enderite Shard
 
@@ -140,22 +109,15 @@ Redstone input. Signal strength scales with entities on the plate, up to 75.
 
 {% tabs %}
 {% tab title="Overview" %}
-Fire-resistant crafting material. Comes from Void Shard (smelting, blasting, or mining without Silk Touch).
+Fire-resistant crafting material. The only way to get it is to smelt or blast a Void Shard in a furnace or blast furnace (1.21.1 and 1.21.11). Mining the ore drops the block, not this shard.
 {% endtab %}
 
 {% tab title="Recipe" %}
-{% columns %}
-{% column %}
-<figure><img src="images/recipes/void-shard-furnace.png" alt="Furnace: Void Shard to Enderite Shard"><figcaption><p>Furnace — 15s, 3 XP</p></figcaption></figure>
-{% endcolumn %}
+| Input | Output | Furnace | Blast furnace | XP |
+|---|---|---|---|---|
+| Void Shard | Enderite Shard | 15s | 10s | 3 |
 
-{% column %}
-<figure><img src="images/recipes/void-shard-blast-furnace.png" alt="Blast furnace: Void Shard to Enderite Shard"><figcaption><p>Blast furnace — 10s, 3 XP</p></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
-
-- **Furnace:** Void Shard → Enderite Shard (15s, 3 XP)
-- **Blast furnace:** Void Shard → Enderite Shard (10s, 3 XP)
+<figure><img src="images/recipes/void-shard-furnace.png" alt="Furnace: Void Shard to Enderite Shard"><figcaption><p>Furnace / blast furnace</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Uses" %}
@@ -183,16 +145,6 @@ Fire-resistant end-game metal. Repairs Enderite gear. Used at the smithing table
 
 {% tab title="Recipe" %}
 <figure><img src="images/recipes/enderite-ingot.png" alt="Crafting: Enderite Ingot"><figcaption><p>Crafting grid</p></figcaption></figure>
-
-```
-D S D
-S E S
-D S D
-```
-
-`D` = Diamond · `S` = Enderite Shard · `E` = Eye of Ender
-
-Also: 1 Block of Enderite → 9 ingots.
 {% endtab %}
 
 {% tab title="Uses" %}
@@ -224,16 +176,6 @@ No chest loot table was found in the mod data. The first copy is in the CapterCr
 
 {% tab title="Recipe" %}
 <figure><img src="images/recipes/enderite-upgrade-smithing-template.png" alt="Crafting: duplicate Enderite Upgrade Smithing Template"><figcaption><p>Crafting grid — 1 template into 2</p></figcaption></figure>
-
-Duplicates 1 template into 2:
-
-```
-D T D
-D N D
-D D D
-```
-
-`D` = Diamond · `T` = Enderite Upgrade Smithing Template · `N` = End Stone
 {% endtab %}
 
 {% tab title="Uses" %}
@@ -241,7 +183,7 @@ Smithing table: netherite item + Enderite Ingot + this template → Enderite ite
 {% endtab %}
 {% endtabs %}
 
-## Enderite equipment
+## Enderite Equipment
 
 **Versions:** 1.21.1 · 1.21.11  
 Fire resistant. Repair with Enderite Ingots. Enchantability 18. Tool durability **3120**, mining speed **10.0**, attack bonus **+5.0**. Armor durability multiplier **42**, toughness **4.5**, knockback resistance **0.2**.
@@ -268,30 +210,30 @@ Diamonds, Enderite Shards, and an eye of Ender.
 {% endstep %}
 
 {% step %}
-## Duplicate the template
+## Duplicate the Template
 
 Diamonds, an existing Enderite Upgrade Smithing Template, and end stone.
 {% endstep %}
 
 {% step %}
-## Smith netherite
+## Smith Netherite
 
 Template + matching netherite piece + Enderite Ingot.
 {% endstep %}
 {% endstepper %}
 
-### Enderite tools
+### Enderite Tools
 
 {% columns %}
 {% column %}
-<figure><img src="images/items/enderite-sword.png" alt="Enderite Sword"><figcaption><p>Sword</p></figcaption></figure>
-<figure><img src="images/items/enderite-pickaxe.png" alt="Enderite Pickaxe"><figcaption><p>Pickaxe</p></figcaption></figure>
-<figure><img src="images/items/enderite-axe.png" alt="Enderite Axe"><figcaption><p>Axe</p></figcaption></figure>
+<figure><img src="images/items/enderite-sword.png" alt="Enderite Sword"><figcaption><p>Enderite Sword</p></figcaption></figure>
+<figure><img src="images/items/enderite-pickaxe.png" alt="Enderite Pickaxe"><figcaption><p>Enderite Pickaxe</p></figcaption></figure>
+<figure><img src="images/items/enderite-axe.png" alt="Enderite Axe"><figcaption><p>Enderite Axe</p></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="images/items/enderite-shovel.png" alt="Enderite Shovel"><figcaption><p>Shovel</p></figcaption></figure>
-<figure><img src="images/items/enderite-hoe.png" alt="Enderite Hoe"><figcaption><p>Hoe</p></figcaption></figure>
+<figure><img src="images/items/enderite-shovel.png" alt="Enderite Shovel"><figcaption><p>Enderite Shovel</p></figcaption></figure>
+<figure><img src="images/items/enderite-hoe.png" alt="Enderite Hoe"><figcaption><p>Enderite Hoe</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -307,7 +249,7 @@ Template + matching netherite piece + Enderite Ingot.
 {% endtab %}
 
 {% tab title="Recipe" %}
-<figure><img src="images/recipes/enderite-smithing.png" alt="Smithing table: Enderite tools"><figcaption><p>Smithing table</p></figcaption></figure>
+<figure><img src="images/recipes/enderite-smithing.gif" alt="Smithing table: Enderite tools"><figcaption><p>Smithing table — all five tools</p></figcaption></figure>
 
 Smithing table for each piece:
 
@@ -321,17 +263,17 @@ End-game tools above netherite. Do not burn in fire or lava.
 {% endtab %}
 {% endtabs %}
 
-### Enderite armor
+### Enderite Armor
 
 {% columns %}
 {% column %}
-<figure><img src="images/items/enderite-helmet.png" alt="Enderite Helmet"><figcaption><p>Helmet</p></figcaption></figure>
-<figure><img src="images/items/enderite-chestplate.png" alt="Enderite Chestplate"><figcaption><p>Chestplate</p></figcaption></figure>
+<figure><img src="images/items/enderite-helmet.png" alt="Enderite Helmet"><figcaption><p>Enderite Helmet</p></figcaption></figure>
+<figure><img src="images/items/enderite-chestplate.png" alt="Enderite Chestplate"><figcaption><p>Enderite Chestplate</p></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="images/items/enderite-leggings.png" alt="Enderite Leggings"><figcaption><p>Leggings</p></figcaption></figure>
-<figure><img src="images/items/enderite-boots.png" alt="Enderite Boots"><figcaption><p>Boots</p></figcaption></figure>
+<figure><img src="images/items/enderite-leggings.png" alt="Enderite Leggings"><figcaption><p>Enderite Leggings</p></figcaption></figure>
+<figure><img src="images/items/enderite-boots.png" alt="Enderite Boots"><figcaption><p>Enderite Boots</p></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -346,7 +288,7 @@ End-game tools above netherite. Do not burn in fire or lava.
 {% endtab %}
 
 {% tab title="Recipe" %}
-<figure><img src="images/recipes/enderite-armor-smithing.png" alt="Smithing table: Enderite armor"><figcaption><p>Smithing table</p></figcaption></figure>
+<figure><img src="images/recipes/enderite-armor-smithing.gif" alt="Smithing table: Enderite armor"><figcaption><p>Smithing table — all four pieces</p></figcaption></figure>
 
 Smithing table for each piece: template + matching **netherite** armor + Enderite Ingot.
 {% endtab %}
@@ -356,7 +298,7 @@ End-game armor above netherite. Fire resistant.
 {% endtab %}
 {% endtabs %}
 
-## Extra recipes
+## Extra Recipes
 
 These do not add items. They work on **1.21.1 and 1.21.11**.
 
@@ -366,17 +308,7 @@ These do not add items. They work on **1.21.1 and 1.21.11**.
 | Raw Gold Block | Gold Block | 90s | 45s | 6.3 |
 | Raw Copper Block | Copper Block | 90s | 45s | 6.3 |
 
-{% columns %}
-{% column %}
-<figure><img src="images/recipes/raw-iron-block-furnace.png" alt="Furnace: Raw Iron Block to Iron Block"><figcaption><p>Raw iron — furnace / blast</p></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
-<figure><img src="images/recipes/raw-gold-block-furnace.png" alt="Furnace: Raw Gold Block to Gold Block"><figcaption><p>Raw gold — furnace / blast</p></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
-
-<figure><img src="images/recipes/raw-copper-block-furnace.png" alt="Furnace: Raw Copper Block to Copper Block"><figcaption><p>Raw copper — furnace / blast</p></figcaption></figure>
+<figure><img src="images/recipes/raw-blocks-furnace.gif" alt="Furnace: raw ore blocks to mineral blocks"><figcaption><p>Furnace / blast furnace — iron, gold, and copper</p></figcaption></figure>
 
 <details>
 <summary>Copper (Minecraft 1.21.1 only)</summary>
@@ -390,23 +322,23 @@ On 1.21.11 use vanilla copper. Stats below are **1.0.1**.
 **ID:** `captercraft:copper_nugget`  
 **Versions:** **1.21.1 only** (vanilla on 1.21.11)
 
-<figure><img src="images/recipes/copper-nugget.png" alt="Crafting: Copper Nugget"><figcaption><p>Crafting grid</p></figcaption></figure>
+| 9 nuggets → 1 ingot | 1 ingot → 9 nuggets |
+| :---: | :---: |
+| ![Crafting: nine Copper Nuggets to ingot](images/recipes/copper-nugget.png) | ![Crafting: copper ingot to nine Copper Nuggets](images/recipes/copper-nugget-from-ingot.png) |
 
-<figure><img src="images/recipes/copper-nugget-furnace.png" alt="Furnace: copper gear to Copper Nugget"><figcaption><p>Furnace / blast — recycle gear</p></figcaption></figure>
+<figure><img src="images/recipes/copper-nugget-furnace.gif" alt="Furnace: copper gear to Copper Nugget"><figcaption><p>Furnace / blast — recycle gear</p></figcaption></figure>
 
-- 1 Copper Ingot → 9 Copper Nuggets
-- 9 Copper Nuggets → 1 Copper Ingot
 - Smelt or blast any copper tool or armor piece → 1 Copper Nugget (10s furnace / blast, 0.7 XP)
 
 Flexible copper crafting and recycling copper gear.
 
-### Copper tools
+### Copper Tools
 
-<figure><img src="images/items/copper-sword.png" alt="Copper Sword"><figcaption><p>Sword</p></figcaption></figure>
-<figure><img src="images/items/copper-pickaxe.png" alt="Copper Pickaxe"><figcaption><p>Pickaxe</p></figcaption></figure>
-<figure><img src="images/items/copper-axe.png" alt="Copper Axe"><figcaption><p>Axe</p></figcaption></figure>
-<figure><img src="images/items/copper-shovel.png" alt="Copper Shovel"><figcaption><p>Shovel</p></figcaption></figure>
-<figure><img src="images/items/copper-hoe.png" alt="Copper Hoe"><figcaption><p>Hoe</p></figcaption></figure>
+<figure><img src="images/items/copper-sword.png" alt="Copper Sword"><figcaption><p>Copper Sword</p></figcaption></figure>
+<figure><img src="images/items/copper-pickaxe.png" alt="Copper Pickaxe"><figcaption><p>Copper Pickaxe</p></figcaption></figure>
+<figure><img src="images/items/copper-axe.png" alt="Copper Axe"><figcaption><p>Copper Axe</p></figcaption></figure>
+<figure><img src="images/items/copper-shovel.png" alt="Copper Shovel"><figcaption><p>Copper Shovel</p></figcaption></figure>
+<figure><img src="images/items/copper-hoe.png" alt="Copper Hoe"><figcaption><p>Copper Hoe</p></figcaption></figure>
 
 Durability **190**. Mining speed **5.0**. Attack bonus **+1.0**. Enchantability **13**. Harvest level matches stone. Repair with copper ingots.
 
@@ -418,26 +350,16 @@ Durability **190**. Mining speed **5.0**. Attack bonus **+1.0**. Enchantability 
 | Copper Shovel | `captercraft:copper_shovel` | 1.5 | −3.0 |
 | Copper Hoe | `captercraft:copper_hoe` | −1.0 | −2.0 |
 
-<figure><img src="images/recipes/copper-sword.png" alt="Crafting: Copper Sword"><figcaption><p>Crafting grid — sword (vanilla tool shapes)</p></figcaption></figure>
-
-Vanilla tool shapes with copper ingots and a wooden rod.
-
-```
-C
-C
-S
-```
-
-`C` = Copper Ingot · `S` = Wooden rod
+<figure><img src="images/recipes/copper-tools.gif" alt="Crafting: Copper Tools"><figcaption><p>Crafting grid — all five tools</p></figcaption></figure>
 
 Early gear between stone and iron. Smelt or blast any piece to recover a Copper Nugget.
 
-### Copper armor
+### Copper Armor
 
-<figure><img src="images/items/copper-helmet.png" alt="Copper Helmet"><figcaption><p>Helmet</p></figcaption></figure>
-<figure><img src="images/items/copper-chestplate.png" alt="Copper Chestplate"><figcaption><p>Chestplate</p></figcaption></figure>
-<figure><img src="images/items/copper-leggings.png" alt="Copper Leggings"><figcaption><p>Leggings</p></figcaption></figure>
-<figure><img src="images/items/copper-boots.png" alt="Copper Boots"><figcaption><p>Boots</p></figcaption></figure>
+<figure><img src="images/items/copper-helmet.png" alt="Copper Helmet"><figcaption><p>Copper Helmet</p></figcaption></figure>
+<figure><img src="images/items/copper-chestplate.png" alt="Copper Chestplate"><figcaption><p>Copper Chestplate</p></figcaption></figure>
+<figure><img src="images/items/copper-leggings.png" alt="Copper Leggings"><figcaption><p>Copper Leggings</p></figcaption></figure>
+<figure><img src="images/items/copper-boots.png" alt="Copper Boots"><figcaption><p>Copper Boots</p></figcaption></figure>
 
 Durability multiplier **11** (helmet 121, chestplate 176, leggings 165, boots 143). Enchantability **8**. Toughness 0.
 
@@ -448,8 +370,8 @@ Durability multiplier **11** (helmet 121, chestplate 176, leggings 165, boots 14
 | Copper Leggings | `captercraft:copper_leggings` | 3 |
 | Copper Boots | `captercraft:copper_boots` | 1 |
 
-<figure><img src="images/recipes/copper-armor.png" alt="Crafting: copper armor"><figcaption><p>Crafting grid — vanilla armor shapes</p></figcaption></figure>
+<figure><img src="images/recipes/copper-armor.gif" alt="Crafting: Copper Armor"><figcaption><p>Crafting grid — all four pieces</p></figcaption></figure>
 
-Vanilla armor shapes with copper ingots. Early armor. Smelt or blast any piece to recover a Copper Nugget.
+Early armor. Smelt or blast any piece to recover a Copper Nugget.
 
 </details>
