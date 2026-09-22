@@ -317,29 +317,56 @@ En 1.21.11 usa el cobre vanilla. Las estadísticas de abajo son las de **1.0.1**
 
 ### Pepita de Cobre
 
+{% columns %}
+{% column %}
 <figure><img src="images/items/copper-nugget.png" alt="Pepita de Cobre"><figcaption><p>Pepita de Cobre — ítem</p></figcaption></figure>
+{% endcolumn %}
 
+{% column %}
 **ID:** `captercraft:copper_nugget`  
 **Versiones:** **solo 1.21.1** (en 1.21.11 es vanilla)
+{% endcolumn %}
+{% endcolumns %}
 
+{% tabs %}
+{% tab title="Resumen" %}
+Crafteo flexible de cobre y reciclaje del equipo de cobre.
+{% endtab %}
+
+{% tab title="Receta" %}
 | 9 pepitas → 1 lingote | 1 lingote → 9 pepitas |
 | :---: | :---: |
 | ![Crafteo: nueve pepitas de cobre a lingote](images/recipes/copper-nugget.png) | ![Crafteo: lingote de cobre a nueve pepitas](images/recipes/copper-nugget-from-ingot.png) |
 
+| Entrada | Salida | Horno | Alto horno | XP |
+|---|---|---|---|---|
+| Herramienta o pieza de armadura de cobre | Pepita de Cobre | 10 s | 10 s | 0.7 |
+
 <figure><img src="images/recipes/copper-nugget-furnace.gif" alt="Horno: equipo de cobre a pepita de cobre"><figcaption><p>Horno / alto horno — reciclar equipo</p></figcaption></figure>
+{% endtab %}
 
-- Fundir o explotar cualquier herramienta o pieza de armadura de cobre → 1 pepita (10 s, 0.7 XP)
-
-Crafteo flexible de cobre y reciclaje del equipo de cobre.
+{% tab title="Usos" %}
+Fundir o explotar cualquier herramienta o pieza de armadura de cobre recupera 1 pepita.
+{% endtab %}
+{% endtabs %}
 
 ### Herramientas de Cobre
 
+{% columns %}
+{% column %}
 <figure><img src="images/items/copper-sword.png" alt="Espada de Cobre"><figcaption><p>Espada de Cobre</p></figcaption></figure>
 <figure><img src="images/items/copper-pickaxe.png" alt="Pico de Cobre"><figcaption><p>Pico de Cobre</p></figcaption></figure>
 <figure><img src="images/items/copper-axe.png" alt="Hacha de Cobre"><figcaption><p>Hacha de Cobre</p></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
 <figure><img src="images/items/copper-shovel.png" alt="Pala de Cobre"><figcaption><p>Pala de Cobre</p></figcaption></figure>
 <figure><img src="images/items/copper-hoe.png" alt="Azada de Cobre"><figcaption><p>Azada de Cobre</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
+{% tabs %}
+{% tab title="Resumen" %}
 Durabilidad **190**. Velocidad de minado **5.0**. Bonus de ataque **+1.0**. Encantabilidad **13**. Nivel de cosecha como la piedra. Se repara con lingotes de cobre.
 
 | Ítem | ID | Ataque | Velocidad |
@@ -349,18 +376,33 @@ Durabilidad **190**. Velocidad de minado **5.0**. Bonus de ataque **+1.0**. Enca
 | Hacha de Cobre | `captercraft:copper_axe` | 7.0 | −3.2 |
 | Pala de Cobre | `captercraft:copper_shovel` | 1.5 | −3.0 |
 | Azada de Cobre | `captercraft:copper_hoe` | −1.0 | −2.0 |
+{% endtab %}
 
+{% tab title="Receta" %}
 <figure><img src="images/recipes/copper-tools.gif" alt="Crafteo: Herramientas de Cobre"><figcaption><p>Cuadrícula de crafteo — las cinco herramientas</p></figcaption></figure>
+{% endtab %}
 
+{% tab title="Usos" %}
 Equipo temprano entre piedra e hierro. Fundir o explotar cualquier pieza recupera una pepita de cobre.
+{% endtab %}
+{% endtabs %}
 
 ### Armadura de Cobre
 
+{% columns %}
+{% column %}
 <figure><img src="images/items/copper-helmet.png" alt="Casco de Cobre"><figcaption><p>Casco de Cobre</p></figcaption></figure>
 <figure><img src="images/items/copper-chestplate.png" alt="Peto de Cobre"><figcaption><p>Peto de Cobre</p></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
 <figure><img src="images/items/copper-leggings.png" alt="Grebas de Cobre"><figcaption><p>Grebas de Cobre</p></figcaption></figure>
 <figure><img src="images/items/copper-boots.png" alt="Botas de Cobre"><figcaption><p>Botas de Cobre</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
+{% tabs %}
+{% tab title="Resumen" %}
 Multiplicador de durabilidad **11** (casco 121, peto 176, grebas 165, botas 143). Encantabilidad **8**. Dureza 0.
 
 | Ítem | ID | Defensa |
@@ -369,9 +411,15 @@ Multiplicador de durabilidad **11** (casco 121, peto 176, grebas 165, botas 143)
 | Peto de Cobre | `captercraft:copper_chestplate` | 4 |
 | Grebas de Cobre | `captercraft:copper_leggings` | 3 |
 | Botas de Cobre | `captercraft:copper_boots` | 1 |
+{% endtab %}
 
+{% tab title="Receta" %}
 <figure><img src="images/recipes/copper-armor.gif" alt="Crafteo: Armadura de Cobre"><figcaption><p>Cuadrícula de crafteo — las cuatro piezas</p></figcaption></figure>
+{% endtab %}
 
+{% tab title="Usos" %}
 Armadura temprana. Fundir o explotar cualquier pieza recupera una pepita de cobre.
+{% endtab %}
+{% endtabs %}
 
 </details>

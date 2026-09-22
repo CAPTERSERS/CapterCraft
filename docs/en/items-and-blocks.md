@@ -317,29 +317,56 @@ On 1.21.11 use vanilla copper. Stats below are **1.0.1**.
 
 ### Copper Nugget
 
+{% columns %}
+{% column %}
 <figure><img src="images/items/copper-nugget.png" alt="Copper Nugget"><figcaption><p>Copper Nugget — item</p></figcaption></figure>
+{% endcolumn %}
 
+{% column %}
 **ID:** `captercraft:copper_nugget`  
 **Versions:** **1.21.1 only** (vanilla on 1.21.11)
+{% endcolumn %}
+{% endcolumns %}
 
+{% tabs %}
+{% tab title="Overview" %}
+Flexible copper crafting and recycling copper gear.
+{% endtab %}
+
+{% tab title="Recipe" %}
 | 9 nuggets → 1 ingot | 1 ingot → 9 nuggets |
 | :---: | :---: |
 | ![Crafting: nine Copper Nuggets to ingot](images/recipes/copper-nugget.png) | ![Crafting: copper ingot to nine Copper Nuggets](images/recipes/copper-nugget-from-ingot.png) |
 
+| Input | Output | Furnace | Blast furnace | XP |
+|---|---|---|---|---|
+| Copper tool or armor piece | Copper Nugget | 10s | 10s | 0.7 |
+
 <figure><img src="images/recipes/copper-nugget-furnace.gif" alt="Furnace: copper gear to Copper Nugget"><figcaption><p>Furnace / blast — recycle gear</p></figcaption></figure>
+{% endtab %}
 
-- Smelt or blast any copper tool or armor piece → 1 Copper Nugget (10s furnace / blast, 0.7 XP)
-
-Flexible copper crafting and recycling copper gear.
+{% tab title="Uses" %}
+Smelt or blast any copper tool or armor piece to recover 1 Copper Nugget.
+{% endtab %}
+{% endtabs %}
 
 ### Copper Tools
 
+{% columns %}
+{% column %}
 <figure><img src="images/items/copper-sword.png" alt="Copper Sword"><figcaption><p>Copper Sword</p></figcaption></figure>
 <figure><img src="images/items/copper-pickaxe.png" alt="Copper Pickaxe"><figcaption><p>Copper Pickaxe</p></figcaption></figure>
 <figure><img src="images/items/copper-axe.png" alt="Copper Axe"><figcaption><p>Copper Axe</p></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
 <figure><img src="images/items/copper-shovel.png" alt="Copper Shovel"><figcaption><p>Copper Shovel</p></figcaption></figure>
 <figure><img src="images/items/copper-hoe.png" alt="Copper Hoe"><figcaption><p>Copper Hoe</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
+{% tabs %}
+{% tab title="Overview" %}
 Durability **190**. Mining speed **5.0**. Attack bonus **+1.0**. Enchantability **13**. Harvest level matches stone. Repair with copper ingots.
 
 | Item | ID | Attack | Speed |
@@ -349,18 +376,33 @@ Durability **190**. Mining speed **5.0**. Attack bonus **+1.0**. Enchantability 
 | Copper Axe | `captercraft:copper_axe` | 7.0 | −3.2 |
 | Copper Shovel | `captercraft:copper_shovel` | 1.5 | −3.0 |
 | Copper Hoe | `captercraft:copper_hoe` | −1.0 | −2.0 |
+{% endtab %}
 
+{% tab title="Recipe" %}
 <figure><img src="images/recipes/copper-tools.gif" alt="Crafting: Copper Tools"><figcaption><p>Crafting grid — all five tools</p></figcaption></figure>
+{% endtab %}
 
+{% tab title="Uses" %}
 Early gear between stone and iron. Smelt or blast any piece to recover a Copper Nugget.
+{% endtab %}
+{% endtabs %}
 
 ### Copper Armor
 
+{% columns %}
+{% column %}
 <figure><img src="images/items/copper-helmet.png" alt="Copper Helmet"><figcaption><p>Copper Helmet</p></figcaption></figure>
 <figure><img src="images/items/copper-chestplate.png" alt="Copper Chestplate"><figcaption><p>Copper Chestplate</p></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
 <figure><img src="images/items/copper-leggings.png" alt="Copper Leggings"><figcaption><p>Copper Leggings</p></figcaption></figure>
 <figure><img src="images/items/copper-boots.png" alt="Copper Boots"><figcaption><p>Copper Boots</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
+{% tabs %}
+{% tab title="Overview" %}
 Durability multiplier **11** (helmet 121, chestplate 176, leggings 165, boots 143). Enchantability **8**. Toughness 0.
 
 | Item | ID | Defense |
@@ -369,9 +411,15 @@ Durability multiplier **11** (helmet 121, chestplate 176, leggings 165, boots 14
 | Copper Chestplate | `captercraft:copper_chestplate` | 4 |
 | Copper Leggings | `captercraft:copper_leggings` | 3 |
 | Copper Boots | `captercraft:copper_boots` | 1 |
+{% endtab %}
 
+{% tab title="Recipe" %}
 <figure><img src="images/recipes/copper-armor.gif" alt="Crafting: Copper Armor"><figcaption><p>Crafting grid — all four pieces</p></figcaption></figure>
+{% endtab %}
 
+{% tab title="Uses" %}
 Early armor. Smelt or blast any piece to recover a Copper Nugget.
+{% endtab %}
+{% endtabs %}
 
 </details>
