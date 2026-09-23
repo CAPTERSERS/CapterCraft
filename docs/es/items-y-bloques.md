@@ -25,13 +25,13 @@ Las herramientas, la armadura y las pepitas de cobre están **solo en 1.21.1**. 
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Fragmento del Vacío" %}
 Mena rara del End. Genera en piedra del End en las islas exteriores (`end_highlands`, `end_midlands`, `end_barrens`, `small_end_islands`), Y 32–80. Vetas de tamaño 3 y vetas más pequeñas de tamaño 2.
 
 Dureza 30 / 1200. Necesita pico de **diamante** o superior para soltar botín. Al minar siempre suelta el bloque Fragmento del Vacío (1.21.1 y 1.21.11). Inmune a explosiones normales, como los escombros ancestrales. El ítem es resistente al fuego.
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Fragmento del Vacío" %}
 Quemar en horno o alto horno para obtener un Fragmento de Enderita.
 {% endtab %}
 {% endtabs %}
@@ -50,17 +50,17 @@ Quemar en horno o alto horno para obtener un Fragmento de Enderita.
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Bloque de Enderita" %}
 Almacenamiento y decoración. Bloque púrpura al estilo netherita. Dureza 50 / 1200. Resistente al fuego. Necesita pico de **diamante** o superior para soltar botín.
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Bloque de Enderita" %}
 | 9 lingotes → 1 bloque | 1 bloque → 9 lingotes |
 | :---: | :---: |
 | ![Crafteo: nueve lingotes de enderita a Bloque de Enderita](images/recipes/block-of-enderite.png) | ![Crafteo: Bloque de Enderita a nueve lingotes de enderita](images/recipes/block-of-enderite-to-ingots.png) |
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Bloque de Enderita" %}
 Guardar lingotes de enderita. Bloque decorativo.
 {% endtab %}
 {% endtabs %}
@@ -79,15 +79,15 @@ Guardar lingotes de enderita. Bloque decorativo.
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Placa de Presión para Peso Medio" %}
 Placa ponderada de cobre. Se activa con **75 entidades**. Queda entre la placa ligera (oro) y la pesada (hierro) de vanilla.
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Placa de Presión para Peso Medio" %}
 <figure><img src="images/recipes/medium-weighted-pressure-plate.png" alt="Crafteo: dos lingotes de cobre a Placa de Presión para Peso Medio"><figcaption><p>Cuadrícula de crafteo</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Placa de Presión para Peso Medio" %}
 Entrada de redstone. La potencia escala con las entidades encima, hasta 75.
 {% endtab %}
 {% endtabs %}
@@ -108,11 +108,11 @@ Entrada de redstone. La potencia escala con las entidades encima, hasta 75.
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Fragmento de Enderita" %}
 Material de crafteo resistente al fuego. La única forma de obtenerlo es quemar un Fragmento del Vacío en horno o alto horno (1.21.1 y 1.21.11). Minar la mena suelta el bloque, no este fragmento.
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Fragmento de Enderita" %}
 | Entrada | Salida | Horno | Alto horno | XP |
 |---|---|---|---|---|
 | Fragmento del Vacío | Fragmento de Enderita | 15 s | 10 s | 3 |
@@ -120,7 +120,7 @@ Material de crafteo resistente al fuego. La única forma de obtenerlo es quemar 
 <figure><img src="images/recipes/void-shard-furnace.png" alt="Horno: Fragmento del Vacío a Fragmento de Enderita"><figcaption><p>Horno / alto horno</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Fragmento de Enderita" %}
 Se craftea en lingotes de enderita con diamantes y un ojo de Ender.
 {% endtab %}
 {% endtabs %}
@@ -139,15 +139,15 @@ Se craftea en lingotes de enderita con diamantes y un ojo de Ender.
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Lingote de Enderita" %}
 Metal de final de partida, resistente al fuego. Repara el equipo de enderita. Se usa en la mesa de herrería para mejorar netherita.
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Lingote de Enderita" %}
 <figure><img src="images/recipes/enderite-ingot.png" alt="Crafteo: Lingote de Enderita"><figcaption><p>Cuadrícula de crafteo</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Lingote de Enderita" %}
 - Craftear Bloque de Enderita (9 lingotes)
 - Mejorar herramientas y armadura de netherita a enderita
 - Reparar equipo de enderita
@@ -168,17 +168,17 @@ Metal de final de partida, resistente al fuego. Repara el equipo de enderita. Se
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Molde de Herrería (Mejora de Enderita)" %}
 Molde de herrería. Se aplica a equipo de netherita. Adición: lingote de enderita.
 
 No hay tabla de botín de cofres en los datos del mod. La primera copia está en la pestaña creativa CapterCraft. Las copias extra se craftean a partir de un molde existente.
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Molde de Herrería (Mejora de Enderita)" %}
 <figure><img src="images/recipes/enderite-upgrade-smithing-template.png" alt="Crafteo: duplicar Molde de Mejora de Enderita"><figcaption><p>Cuadrícula de crafteo — 1 molde en 2</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Molde de Herrería (Mejora de Enderita)" %}
 Mesa de herrería: ítem de netherita + lingote de enderita + este molde → ítem de enderita.
 {% endtab %}
 {% endtabs %}
@@ -224,21 +224,12 @@ Molde + pieza de netherita equivalente + lingote de enderita.
 
 ### Herramientas de Enderita
 
-{% columns %}
-{% column %}
-<figure><img src="images/items/enderite-sword.png" alt="Espada de Enderita"><figcaption><p>Espada de Enderita</p></figcaption></figure>
-<figure><img src="images/items/enderite-pickaxe.png" alt="Pico de Enderita"><figcaption><p>Pico de Enderita</p></figcaption></figure>
-<figure><img src="images/items/enderite-axe.png" alt="Hacha de Enderita"><figcaption><p>Hacha de Enderita</p></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
-<figure><img src="images/items/enderite-shovel.png" alt="Pala de Enderita"><figcaption><p>Pala de Enderita</p></figcaption></figure>
-<figure><img src="images/items/enderite-hoe.png" alt="Azada de Enderita"><figcaption><p>Azada de Enderita</p></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
+| Espada de Enderita | Pico de Enderita | Hacha de Enderita | Pala de Enderita | Azada de Enderita |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Espada de Enderita](images/items/enderite-sword.png) | ![Pico de Enderita](images/items/enderite-pickaxe.png) | ![Hacha de Enderita](images/items/enderite-axe.png) | ![Pala de Enderita](images/items/enderite-shovel.png) | ![Azada de Enderita](images/items/enderite-hoe.png) |
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Herramientas de Enderita" %}
 | Ítem | ID | Ataque | Velocidad |
 |---|---|---|---|
 | Espada de Enderita | `captercraft:enderite_sword` | 3.0 | −2.0 |
@@ -248,7 +239,7 @@ Molde + pieza de netherita equivalente + lingote de enderita.
 | Azada de Enderita | `captercraft:enderite_hoe` | −4.0 | 1.0 |
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Herramientas de Enderita" %}
 <figure><img src="images/recipes/enderite-smithing.gif" alt="Mesa de herrería: Herramientas de Enderita"><figcaption><p>Mesa de herrería — las cinco herramientas</p></figcaption></figure>
 
 Mesa de herrería, para cada pieza:
@@ -258,27 +249,19 @@ Mesa de herrería, para cada pieza:
 3. Lingote de Enderita
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Herramientas de Enderita" %}
 Herramientas de final de partida por encima de la netherita. No se queman en fuego ni lava.
 {% endtab %}
 {% endtabs %}
 
 ### Armadura de Enderita
 
-{% columns %}
-{% column %}
-<figure><img src="images/items/enderite-helmet.png" alt="Casco de Enderita"><figcaption><p>Casco de Enderita</p></figcaption></figure>
-<figure><img src="images/items/enderite-chestplate.png" alt="Peto de Enderita"><figcaption><p>Peto de Enderita</p></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
-<figure><img src="images/items/enderite-leggings.png" alt="Grebas de Enderita"><figcaption><p>Grebas de Enderita</p></figcaption></figure>
-<figure><img src="images/items/enderite-boots.png" alt="Botas de Enderita"><figcaption><p>Botas de Enderita</p></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
+| Casco de Enderita | Peto de Enderita | Grebas de Enderita | Botas de Enderita |
+| :---: | :---: | :---: | :---: |
+| ![Casco de Enderita](images/items/enderite-helmet.png) | ![Peto de Enderita](images/items/enderite-chestplate.png) | ![Grebas de Enderita](images/items/enderite-leggings.png) | ![Botas de Enderita](images/items/enderite-boots.png) |
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Armadura de Enderita" %}
 | Ítem | ID | Defensa |
 |---|---|---|
 | Casco de Enderita | `captercraft:enderite_helmet` | 4 |
@@ -287,13 +270,13 @@ Herramientas de final de partida por encima de la netherita. No se queman en fue
 | Botas de Enderita | `captercraft:enderite_boots` | 4 |
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Armadura de Enderita" %}
 <figure><img src="images/recipes/enderite-armor-smithing.gif" alt="Mesa de herrería: Armadura de Enderita"><figcaption><p>Mesa de herrería — las cuatro piezas</p></figcaption></figure>
 
 Mesa de herrería: molde + armadura de **netherita** equivalente + lingote de enderita.
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Armadura de Enderita" %}
 Armadura de final de partida por encima de la netherita. Resistente al fuego.
 {% endtab %}
 {% endtabs %}
@@ -329,11 +312,11 @@ En 1.21.11 usa el cobre vanilla. Las estadísticas de abajo son las de **1.0.1**
 {% endcolumns %}
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Pepita de Cobre" %}
 Crafteo flexible de cobre y reciclaje del equipo de cobre.
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Pepita de Cobre" %}
 | 9 pepitas → 1 lingote | 1 lingote → 9 pepitas |
 | :---: | :---: |
 | ![Crafteo: nueve pepitas de cobre a lingote](images/recipes/copper-nugget.png) | ![Crafteo: lingote de cobre a nueve pepitas](images/recipes/copper-nugget-from-ingot.png) |
@@ -345,28 +328,19 @@ Crafteo flexible de cobre y reciclaje del equipo de cobre.
 <figure><img src="images/recipes/copper-nugget-furnace.gif" alt="Horno: equipo de cobre a pepita de cobre"><figcaption><p>Horno / alto horno — reciclar equipo</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Pepita de Cobre" %}
 Fundir o explotar cualquier herramienta o pieza de armadura de cobre recupera 1 pepita.
 {% endtab %}
 {% endtabs %}
 
 ### Herramientas de Cobre
 
-{% columns %}
-{% column %}
-<figure><img src="images/items/copper-sword.png" alt="Espada de Cobre"><figcaption><p>Espada de Cobre</p></figcaption></figure>
-<figure><img src="images/items/copper-pickaxe.png" alt="Pico de Cobre"><figcaption><p>Pico de Cobre</p></figcaption></figure>
-<figure><img src="images/items/copper-axe.png" alt="Hacha de Cobre"><figcaption><p>Hacha de Cobre</p></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
-<figure><img src="images/items/copper-shovel.png" alt="Pala de Cobre"><figcaption><p>Pala de Cobre</p></figcaption></figure>
-<figure><img src="images/items/copper-hoe.png" alt="Azada de Cobre"><figcaption><p>Azada de Cobre</p></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
+| Espada de Cobre | Pico de Cobre | Hacha de Cobre | Pala de Cobre | Azada de Cobre |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Espada de Cobre](images/items/copper-sword.png) | ![Pico de Cobre](images/items/copper-pickaxe.png) | ![Hacha de Cobre](images/items/copper-axe.png) | ![Pala de Cobre](images/items/copper-shovel.png) | ![Azada de Cobre](images/items/copper-hoe.png) |
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Herramientas de Cobre" %}
 Durabilidad **190**. Velocidad de minado **5.0**. Bonus de ataque **+1.0**. Encantabilidad **13**. Nivel de cosecha como la piedra. Se repara con lingotes de cobre.
 
 | Ítem | ID | Ataque | Velocidad |
@@ -378,31 +352,23 @@ Durabilidad **190**. Velocidad de minado **5.0**. Bonus de ataque **+1.0**. Enca
 | Azada de Cobre | `captercraft:copper_hoe` | −1.0 | −2.0 |
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Herramientas de Cobre" %}
 <figure><img src="images/recipes/copper-tools.gif" alt="Crafteo: Herramientas de Cobre"><figcaption><p>Cuadrícula de crafteo — las cinco herramientas</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Herramientas de Cobre" %}
 Equipo temprano entre piedra e hierro. Fundir o explotar cualquier pieza recupera una pepita de cobre.
 {% endtab %}
 {% endtabs %}
 
 ### Armadura de Cobre
 
-{% columns %}
-{% column %}
-<figure><img src="images/items/copper-helmet.png" alt="Casco de Cobre"><figcaption><p>Casco de Cobre</p></figcaption></figure>
-<figure><img src="images/items/copper-chestplate.png" alt="Peto de Cobre"><figcaption><p>Peto de Cobre</p></figcaption></figure>
-{% endcolumn %}
-
-{% column %}
-<figure><img src="images/items/copper-leggings.png" alt="Grebas de Cobre"><figcaption><p>Grebas de Cobre</p></figcaption></figure>
-<figure><img src="images/items/copper-boots.png" alt="Botas de Cobre"><figcaption><p>Botas de Cobre</p></figcaption></figure>
-{% endcolumn %}
-{% endcolumns %}
+| Casco de Cobre | Peto de Cobre | Grebas de Cobre | Botas de Cobre |
+| :---: | :---: | :---: | :---: |
+| ![Casco de Cobre](images/items/copper-helmet.png) | ![Peto de Cobre](images/items/copper-chestplate.png) | ![Grebas de Cobre](images/items/copper-leggings.png) | ![Botas de Cobre](images/items/copper-boots.png) |
 
 {% tabs %}
-{% tab title="Resumen" %}
+{% tab title="Resumen · Armadura de Cobre" %}
 Multiplicador de durabilidad **11** (casco 121, peto 176, grebas 165, botas 143). Encantabilidad **8**. Dureza 0.
 
 | Ítem | ID | Defensa |
@@ -413,11 +379,11 @@ Multiplicador de durabilidad **11** (casco 121, peto 176, grebas 165, botas 143)
 | Botas de Cobre | `captercraft:copper_boots` | 1 |
 {% endtab %}
 
-{% tab title="Receta" %}
+{% tab title="Receta · Armadura de Cobre" %}
 <figure><img src="images/recipes/copper-armor.gif" alt="Crafteo: Armadura de Cobre"><figcaption><p>Cuadrícula de crafteo — las cuatro piezas</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Usos" %}
+{% tab title="Usos · Armadura de Cobre" %}
 Armadura temprana. Fundir o explotar cualquier pieza recupera una pepita de cobre.
 {% endtab %}
 {% endtabs %}
