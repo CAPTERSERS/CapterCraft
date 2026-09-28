@@ -1,8 +1,6 @@
 ---
 description: Descargas para Minecraft 1.21.11 y 1.21.1.
 icon: code-branch
-layout:
-  width: wide
 ---
 
 # Versiones
